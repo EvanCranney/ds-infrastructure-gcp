@@ -1,0 +1,8 @@
+// GCP credential variables
+variable "service_account" {}
+variable "project" {}
+variable "region" { default="australia-southeast1"}
+variable "zone" { default="australia-southeast1-a"}
+
+// any other custom variables
+// ... go here
