@@ -1,3 +1,7 @@
+# Miscellaneous
+*.swp
+.DS_Store
+
 # Terraform.gitignore
 .terraform
 *.tfstate*
