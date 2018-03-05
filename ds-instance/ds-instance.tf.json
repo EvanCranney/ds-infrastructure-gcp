@@ -1,0 +1,22 @@
+resource "google_compute_instance" "ds-instance" {
+    name = "${var.name}"
+    machine_type = "${var.machine_type}"
+
+    boot_disk {
+        initialize_params {
+            image = "${var.image}"
+        }
+    }
+
+    service_account {
+        scopes = "${var.service_acount_scopes}"
+    }
+
+    metadata_startup_script {
+        
+    }
+
+    metadata {
+        sshKeys = "${}"
+    }
+}
