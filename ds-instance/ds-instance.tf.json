@@ -12,11 +12,12 @@ resource "google_compute_instance" "ds-instance" {
         scopes = "${var.service_acount_scopes}"
     }
 
-    metadata_startup_script {
-        
+    metadata {
+        sshKeys = "${var.ssh_public_key}"
     }
 
-    metadata {
-        sshKeys = "${}"
-    }
+    metadata_startup_script = "${data.template_file.startup.rendered}"
 }
+
+
+

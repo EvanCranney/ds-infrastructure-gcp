@@ -2,3 +2,8 @@ variable "name" {}
 variable "machine_type" { default="n1-standard-1" }
 variable "image" { default="debian-cloud/debian-9" }
 variable "service_account_scopes" { default=["storage-rw"], type="list" }
+
+variable "user" { default="user" }
+variable "ssh_public_key" {}
+
+variable "startup_tmpl" { default="startup.sh" }

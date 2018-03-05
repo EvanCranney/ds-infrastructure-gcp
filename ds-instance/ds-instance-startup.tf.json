@@ -1,0 +1,6 @@
+data "template_file" "startup" {
+    template = "${file("${path.module}/${var.startup_tmpl}}")}"
+    vars {
+
+    }
+}
