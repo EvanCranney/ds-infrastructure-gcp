@@ -10,3 +10,5 @@ variable "user" { default="user" }
 variable "ssh_public_key" {}
 
 variable "startup_tmpl" { default="startup.sh" }
+
+

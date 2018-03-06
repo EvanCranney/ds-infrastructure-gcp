@@ -15,6 +15,7 @@ resource "google_compute_instance" "ds-instance" {
     network_interface {
         network = "${var.network}"
         access_config {
+            nat_ip = "${google_compute_address.address.address}"
         }
     }
 
