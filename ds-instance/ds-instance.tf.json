@@ -5,6 +5,7 @@ resource "google_compute_instance" "ds-instance" {
     boot_disk {
         initialize_params {
             image = "${var.image}"
+            size = "${var.size}"
         }
     }
 
