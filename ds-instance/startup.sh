@@ -23,4 +23,7 @@ source .profile
 # install scikit-learn
 conda install -y scikit-learn
 
+# install tensorflow-cpu
+pip install tensorflow
+
 EOF
