@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# only run if this is the first time the instance has been booted - check
+#       for existence of the anaconda3 directory
+if [-d "$/home/user/anaconda3"]; then
+    exit 0
+fi
+
 # wait before commencing setup
 sleep 20
 
